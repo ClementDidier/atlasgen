@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css" />
+        <script>window.$ = window.jQuery = require('jquery');</script>
+        
+        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="col">
+            <div class="row-sm" margin-top="20px">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Images</span>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile" accept=".png" multiple>
+                        <label class="custom-file-label" for="inputGroupFile">Selectionner les spritesheets</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row-sm">
+                <ul class="nav nav-tabs" id="navTab" role="tablist"></ul>
+                <canvas id="canvas" style="border: 1px solid black">
+                    Browser not compatible
+                </canvas>
+            </div>
+        </div>
+        
+        <script src="index.js" type="text/javascript"></script>
+    </body>
+</html>
